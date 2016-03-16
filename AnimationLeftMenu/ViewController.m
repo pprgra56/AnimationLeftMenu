@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "CQMenuView.h"
 
-//#define keyWindow [UIApplication sharedApplication].keyWindow
+
+#define ScreenBounds     [UIScreen mainScreen].bounds
 
 @interface ViewController ()
+
 @property(strong,nonatomic) CQMenuView *menu;
 
 @property(strong,nonatomic) UIWindow *win;
@@ -20,16 +22,29 @@
 
 @implementation ViewController
 
+-(CQMenuView *)menu{
+    if (_menu == nil) {
+        _menu = [CQMenuView new];
+    }
+    return _menu;
+}
+
+
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.menu = [[CQMenuView alloc] initWithColor:[UIColor redColor]];
-//    [keyWindow addSubview:self.menu];
+
+    self.title = @"demo";
+
+    UIWindow *keywindow = [[UIApplication sharedApplication] windows][0];
+    NSLog(@"%p",keywindow);
     
-    UIView *vv =  [[UIView alloc] initWithFrame:CGRectMake(100, 100, 40, 40)];
-    vv.backgroundColor = [UIColor purpleColor];
-    self.win =  [[UIApplication sharedApplication] keyWindow];
+    [self.navigationController.view setBackgroundColor:[UIColor blueColor]];
+    NSLog(@"Joker %p",self.navigationController.view);
     
-    [self.win addSubview:vv];
+    
+    
+  
+
 }
 - (IBAction)trigger:(id)sender {
     

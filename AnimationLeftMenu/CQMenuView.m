@@ -24,21 +24,20 @@
 
 @implementation CQMenuView
 
--(instancetype)initWithColor:(UIColor *)color{
-    self.backgroundColor = color;
-    self.frame =CGRectMake(-(KeyWindow.frame.size.width/2+Offset), 0, KeyWindow.frame.size.width/2+Offset, KeyWindow.frame.size.height);
-    
-    self.temporaryView1.frame = CGRectMake(-40, KeyWindow.center.y, 40, 40);
-    self.temporaryView2.frame = CGRectMake(-40, KeyWindow.center.y, 40, 40);
-    [KeyWindow addSubview:self.temporaryView1];
-    [KeyWindow addSubview:self.temporaryView2];
-    
-    
-    self.backgroundColor = self.backgroundColor;
-    
-    
+-(instancetype)init{
+    self = [super init];
+    if(self){
+        
+        self.temporaryView1.frame = CGRectMake(-40, KeyWindow.center.y, 40, 40);
+        self.temporaryView2.frame = CGRectMake(-40, KeyWindow.center.y, 40, 40);
+        [KeyWindow addSubview:self.temporaryView1];
+        [KeyWindow addSubview:self.temporaryView2];
+    }
     return self;
 }
+
+
+
 -(void)triggler{
     [UIView animateWithDuration:.7 animations:^{
         
