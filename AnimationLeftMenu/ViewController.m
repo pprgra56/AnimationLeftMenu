@@ -7,21 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "CQMenuView.h"
+
+//#define keyWindow [UIApplication sharedApplication].keyWindow
 
 @interface ViewController ()
+@property(strong,nonatomic) CQMenuView *menu;
+
+@property(strong,nonatomic) UIWindow *win;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.menu = [[CQMenuView alloc] initWithColor:[UIColor redColor]];
+//    [keyWindow addSubview:self.menu];
+    
+    UIView *vv =  [[UIView alloc] initWithFrame:CGRectMake(100, 100, 40, 40)];
+    vv.backgroundColor = [UIColor purpleColor];
+    self.win =  [[UIApplication sharedApplication] keyWindow];
+    
+    [self.win addSubview:vv];
+}
+- (IBAction)trigger:(id)sender {
+    
+    [self.menu triggler];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

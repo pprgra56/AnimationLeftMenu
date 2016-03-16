@@ -15,6 +15,7 @@
 		9B1714611C96AB960013E9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B17145F1C96AB960013E9CC /* LaunchScreen.storyboard */; };
 		9B17146C1C96AB960013E9CC /* AnimationLeftMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B17146B1C96AB960013E9CC /* AnimationLeftMenuTests.m */; };
 		9B1714771C96AB960013E9CC /* AnimationLeftMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1714761C96AB960013E9CC /* AnimationLeftMenuUITests.m */; };
+		9B1714871C9813B30013E9CC /* CQMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1714861C9813B30013E9CC /* CQMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9B1714721C96AB960013E9CC /* AnimationLeftMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationLeftMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1714761C96AB960013E9CC /* AnimationLeftMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationLeftMenuUITests.m; sourceTree = "<group>"; };
 		9B1714781C96AB960013E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1714851C9813B30013E9CC /* CQMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMenuView.h; sourceTree = "<group>"; };
+		9B1714861C9813B30013E9CC /* CQMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		9B1714501C96AB960013E9CC /* AnimationLeftMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9B1714841C9813990013E9CC /* LeftMenu */,
 				9B1714541C96AB960013E9CC /* AppDelegate.h */,
 				9B1714551C96AB960013E9CC /* AppDelegate.m */,
 				9B1714571C96AB960013E9CC /* ViewController.h */,
@@ -138,6 +142,15 @@
 				9B1714781C96AB960013E9CC /* Info.plist */,
 			);
 			path = AnimationLeftMenuUITests;
+			sourceTree = "<group>";
+		};
+		9B1714841C9813990013E9CC /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9B1714851C9813B30013E9CC /* CQMenuView.h */,
+				9B1714861C9813B30013E9CC /* CQMenuView.m */,
+			);
+			name = LeftMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				9B1714591C96AB960013E9CC /* ViewController.m in Sources */,
 				9B1714561C96AB960013E9CC /* AppDelegate.m in Sources */,
 				9B1714531C96AB960013E9CC /* main.m in Sources */,
+				9B1714871C9813B30013E9CC /* CQMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
