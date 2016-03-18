@@ -11,44 +11,29 @@
 
 
 #define ScreenBounds     [UIScreen mainScreen].bounds
+#define KeyWindow [[[UIApplication sharedApplication] delegate] window]
+
 
 @interface ViewController ()
 
 @property(strong,nonatomic) CQMenuView *menu;
 
-@property(strong,nonatomic) UIWindow *win;
-
 @end
 
 @implementation ViewController
-
--(CQMenuView *)menu{
-    if (_menu == nil) {
-        _menu = [CQMenuView new];
-    }
-    return _menu;
-}
-
+//http://182.92.190.64:8010/guoer-appserv/collectSelectCoupons?guoerUserId=2322&cost=3&begin=0&pageSize=1000
 
 -(void)viewDidLoad{
     [super viewDidLoad];
 
-    self.title = @"demo";
+    self.title = @"LeftM";
 
-    UIWindow *keywindow = [[UIApplication sharedApplication] windows][0];
-    NSLog(@"%p",keywindow);
+    self.menu = [[CQMenuView alloc] initwithTitle:@"abc"];
     
-    [self.navigationController.view setBackgroundColor:[UIColor blueColor]];
-    NSLog(@"Joker %p",self.navigationController.view);
-    
-    
-    
-  
 
 }
 - (IBAction)trigger:(id)sender {
-    
-    [self.menu triggler];
+    [self.menu trigger];
     
 }
 

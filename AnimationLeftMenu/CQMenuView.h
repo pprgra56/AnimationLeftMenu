@@ -10,8 +10,8 @@
 
 @interface CQMenuView : UIView
 
-
--(void)triggler;
+-(id)initwithTitle:(NSString *)title;
+-(void)trigger;
 
 
 @end

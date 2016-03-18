@@ -53,7 +53,7 @@
 		9B1714761C96AB960013E9CC /* AnimationLeftMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationLeftMenuUITests.m; sourceTree = "<group>"; };
 		9B1714781C96AB960013E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1714851C9813B30013E9CC /* CQMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMenuView.h; sourceTree = "<group>"; };
-		9B1714861C9813B30013E9CC /* CQMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMenuView.m; sourceTree = "<group>"; };
+		9B1714861C9813B30013E9CC /* CQMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CQMenuView.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
